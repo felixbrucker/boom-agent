@@ -1,3 +1,8 @@
+0.3.1 / 2019-08-18
+==================
+
+* Do not create additional pledges while moving.
+
 0.3.0 / 2019-08-18
 ==================
 
