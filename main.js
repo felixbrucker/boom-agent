@@ -11,5 +11,6 @@ const version = require('./package').version;
   eventBus.publish('log/info', `BOOM-Agent ${version} starting ..`);
   await config.init();
   await wallet.init();
-  agent.init();
+  await agent.init();
+  await wallet.checkBalances();
 })();
