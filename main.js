@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const logger = require('./lib/services/logger');
 const eventBus = require('./lib/services/event-bus');
 const config = require('./lib/services/config');
