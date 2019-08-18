@@ -1,7 +1,7 @@
 workflow "Audit and Publish" {
   on = "push"
   resolves = [
-    "Publish to npm",
+    "Create Github Release",
   ]
 }
 
@@ -29,4 +29,11 @@ action "Publish to npm" {
   needs = ["Tag"]
   args = "publish --access public"
   secrets = ["NPM_AUTH_TOKEN"]
+}
+
+action "Create Github Release" {
+  uses = "felixbrucker/github-actions/publish-release@master"
+  needs = ["Publish to npm"]
+  secrets = ["GITHUB_TOKEN"]
+  args = ["--name", "BOOM-Agent"]
 }

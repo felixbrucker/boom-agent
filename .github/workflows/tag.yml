@@ -23,3 +23,9 @@ jobs:
         NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       with:
         args: publish --access public
+    - name: Create Github Release
+      uses: felixbrucker/github-actions/publish-release@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: --name BOOM-Agent

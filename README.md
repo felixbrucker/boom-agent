@@ -33,6 +33,10 @@ npm update --global boom-agent
 - BTC: 14rbdLr2YXDkguVaqRKnPftTPX52tnv2x2
 - PP: https://www.paypal.me/felixbrucker
 
+## Changelog
+
+A Changelog can be found [here](https://github.com/felixbrucker/boom-agent/blob/master/CHANGELOG.md)
+
 ## License
 
 GNU GPLv3 (see [LICENSE](https://github.com/felixbrucker/boom-agent/blob/master/LICENSE))
