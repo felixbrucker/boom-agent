@@ -20,7 +20,7 @@ boom-agent
 ## Updating the agent
 
 ```bash
-npm update --global boom-agent
+npm install --global boom-agent
 ```
 
 ## Donate
