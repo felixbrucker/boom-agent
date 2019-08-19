@@ -1,3 +1,8 @@
+0.3.3 / 2019-08-19
+==================
+
+* Ensure we wait for newly created pledges before checking again.
+
 0.3.2 / 2019-08-18
 ==================
 
