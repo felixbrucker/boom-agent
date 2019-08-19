@@ -12,5 +12,5 @@ const version = require('./package').version;
   await config.init();
   await wallet.init();
   await agent.init();
-  await wallet.checkBalances();
+  await wallet.checkBalancesAndRePledge();
 })();
